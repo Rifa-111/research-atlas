@@ -44,9 +44,7 @@ The initial implementation was browser-checked for record creation, persistence 
 
 ## Deployment
 
-This is a server-backed application. GitHub Pages cannot run its Worker routes or D1 database. Uploading this source to GitHub does not deploy the working app or synchronise future changes to the existing hosted Site.
-
-For a new hosted deployment, register the project with a compatible Worker host, configure the D1 binding `DB`, apply migrations and publish the Worker build. The hosting manifest in this repository deliberately excludes the original Site identity.
+This is a server-backed application. For a new hosted deployment, register the project with a compatible Worker host, configure the D1 binding `DB`, apply migrations and publish the Worker build. The hosting manifest in this repository deliberately excludes the original Site identity.
 
 **Access control is required before storing personal records on any independent deployment.** The route handlers rely on the original host's private access gate; this repository does not implement a standalone authentication system.
 
